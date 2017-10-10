@@ -10,6 +10,9 @@ for i in servers:
     child = pexpect.spawn(commond)
     child.expect('root')
     child.sendline(i['password'])
-    print(child.read())
+    output = str(child.read()).replace('\\n', '')
+    for o in output.split('\\r'):
+        print(o.strip())
+    print("================================")
 
 #git push production master

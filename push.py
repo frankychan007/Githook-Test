@@ -6,10 +6,9 @@ import pexpect
 servers = json.loads(open('server.json').read().strip())
 for i in servers:
     commond = "git push " + i['name'] + " master"
-    print(commond)
+    print("Running " + commond)
     child = pexpect.spawn(commond)
     child.expect('root')
-    print(child.before)
     child.sendline(i['password'])
     print(child.read())
 

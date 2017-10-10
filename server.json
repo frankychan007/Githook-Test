@@ -2,11 +2,15 @@
   {
     "name": "s1",
     "ip": "45.77.148.144",
-    "password": "h.7R!8aogtu,FvRZ"
+    "username": "root",
+    "password": "h.7R!8aogtu,FvRZ",
+    "path": "proj"
   },
   {
     "name": "s2",
     "ip": "45.76.74.212",
-    "password": "kP{6D(VD9[=DY({3"
+    "username": "root",
+    "password": "kP{6D(VD9[=DY({3",
+    "path": "proj"
   }
 ]

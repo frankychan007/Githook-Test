@@ -1,4 +1,8 @@
-<script src="demo.js"></script>
+
+<script src="jquery-3.2.1.min.js"></script>
 <script>
-  document.write('123 Hello ', data.name);
+  $.getJSON("./demo.json", function(json) {
+      console.log(json);
+      document.write('123 Hello ', json.name);
+  });
 </script>
